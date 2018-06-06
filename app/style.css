@@ -4,6 +4,7 @@ html {
 
 body {
     background-image: url('https://images.unsplash.com/photo-1494583882007-bfd2321fb8e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=531bcd38b09bca60964ef2bddc574889&auto=format&fit=crop&w=1468&q=80');
+    background-size: auto;
     text-align: center;
 
 }
@@ -25,7 +26,6 @@ button {
 }
 
 .gmap_canvas {
-    overflow: hidden;
     background: none !important;
     height: 200px;
     width: 800px;
@@ -57,7 +57,7 @@ button {
 }
 
 #info {
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 11%;
 }
 
