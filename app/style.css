@@ -18,11 +18,13 @@ button {
 #about,#contact {
     display: none;
     color: white;
-    background-color: rgb(26, 26, 26, 0.5);
+    background-color: rgb(26, 26, 26, 0.75);
     margin: auto;
     vertical-align: middle;
     width: 90%;
     height: 90%;
+    padding: 8%;
+    margin-bottom: 15%;
 }
 
 
@@ -30,18 +32,23 @@ button {
     color: white;
     width: 80%;
     height: 80%;
-    background-color: rgb(26, 26, 26, 0.5);
+    background-color: rgb(26, 26, 26, 0.75);
     display: block;
     margin: auto;
+    padding: 8%;
+    margin-bottom: 15%;
+
 }
 
 #info {
-    margin-top: 12%;
-    margin-bottom: 15%;
+    margin-top: 11%;
+    margin-bottom: 11%;
 }
 
 #menu {
     color: white;
     display: none;
-    background-color: rgb(26, 26, 26, 0.5);
+    background-color: rgb(26, 26, 26, 0.75);
+    margin-bottom: 15%;
+    padding: 4%
 }
