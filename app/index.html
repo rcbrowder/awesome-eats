@@ -10,17 +10,26 @@
     </head>
 
     <body class="container">
-        <nav id="info" class="navbar navbar-light">
-            <a class="navbar-brand" href="#">Awesome Eats</a>
-            <a class="nav-item nav-link" href="#">about</button>
-            <a class="nav-item nav-link" href="#">menu</button>
-            <a class="nav-item nav-link" href="#">contact</button>
-        </nav>
-        <div id="name">Awesome Eats</div>
-        <div id="menu" class="flex-row"></div>
+        <div id="info" class="container">
+            <button type="button" id="homeButton" class="btn">Awesome Eats</a>
+            <button type="button" id="aboutButton" class="btn">about</button>
+            <button type="button" id="menuButton" class="btn">menu</button>
+            <button type="button" id="contactButton" class="btn">contact</button>
+        </div>
+        <div id="content" class="container">
+            <div id="about" class="displayItem">
+                Awesome Eats was founded in 2018 by Chris Browder. After finishing the Summer '18 web development bootcamp Chris found that he had all the skills needed to run a company. After the hostile takeover of Awesome Inc. Chris decided to open a restaurant on
+                the quickly expanding campus. Thus Awesome Eats was born.
+            </div>
+            <div id="home" class="displayItem">Awesome Eats</div>
+            <div id="menu"></div>
 
-        <div id="foot" class="flex-row"></div>
-
+            <div id="contact" class="displayItem">
+                <p>Awesome Eats</p>
+                <p>348 E Main St, Lexington, KY</p>
+                <p>(859) 888-8888</p>
+            </div>
+        </div>
         <script src="main.js"></script>
     </body>
 
