@@ -1,11 +1,18 @@
+html {
+    font-size: 26px;
+}
+
 body {
     background-image: url('https://images.unsplash.com/photo-1494583882007-bfd2321fb8e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=531bcd38b09bca60964ef2bddc574889&auto=format&fit=crop&w=1468&q=80');
     text-align: center;
+
 }
 
 button {
     background-color: transparent;
     color: white;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #about,#contact {
@@ -21,18 +28,15 @@ button {
 
 #home {
     color: white;
-    font-size: 4em;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     background-color: rgb(26, 26, 26, 0.5);
     display: block;
     margin: auto;
-    vertical-align: middle;
-
 }
 
 #info {
-    margin-top: 15%;
+    margin-top: 12%;
     margin-bottom: 15%;
 }
 

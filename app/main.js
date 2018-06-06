@@ -7,6 +7,7 @@ var home = document.getElementById('home');
 var menu = document.getElementById('menu');
 var contact = document.getElementById('contact');
 var about = document.getElementById('about');
+var isDone = false;
 
 // api variables
 var apiRequest;
@@ -18,7 +19,7 @@ function main() {
         homeButton.onclick = displayHome;
         contactButton.onclick = displayContact;
         aboutButton.onclick = displayAbout;
-	}
+}
 
 function displayAbout() {
     about.style.display = 'block';
@@ -46,6 +47,7 @@ function getMenu() {
     apiRequest.onload = displayMenu;
     apiRequest.open('get', url, true);
     apiRequest.send();
+
 }
 
 function displayMenu() {
@@ -57,13 +59,16 @@ function displayMenu() {
         contact.style.display = 'none';
         menu.style.display = 'block';
         // Print description of each menu item on a new line
-        for (var item in response.menu_items) {
-            var node = document.createElement('li');
-            var menuArray = response.menu_items[item].description;
-            var textnode = document.createTextNode(menuArray);
-            console.log(textnode);
-            node.appendChild(textnode);
-            menu.appendChild(node);
+        if (isDone == false) {
+            for (var item in response.menu_items) {
+                var node = document.createElement('li');
+                var menuArray = response.menu_items[item].description;
+                var textnode = document.createTextNode(menuArray);
+                console.log(textnode);
+                node.appendChild(textnode);
+                menu.appendChild(node);
+                isDone = true;
+            }
         }
     }
 }
