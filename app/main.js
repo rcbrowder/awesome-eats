@@ -3,7 +3,7 @@ var menu = document.getElementById('menu');
 
 // api variables
 var apiRequest;
-var url = 'http://entree-s18.herokuapp.com/v1/menu';
+var url = 'https://entree-s18.herokuapp.com/v1/menu';
 
 function getMenu() {
     apiRequest = new XMLHttpRequest();
