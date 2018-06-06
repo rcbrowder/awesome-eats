@@ -7,6 +7,7 @@ var home = document.getElementById('home');
 var menu = document.getElementById('menu');
 var contact = document.getElementById('contact');
 var about = document.getElementById('about');
+var map = document.getElementsByClassName('mapouter');
 var isDone = false;
 
 // api variables
@@ -26,13 +27,15 @@ function displayAbout() {
     home.style.display = 'none';
     menu.style.display = 'none';
     contact.style.display = 'none';
+    map[0].style.display = 'none';
 }
 
 function displayHome() {
     home.style.display = 'block';
+    map[0].style.display = 'block';
     menu.style.display = 'none';
     contact.style.display = 'none';
-    about.style.display = 'none'
+    about.style.display = 'none';
 }
 
 function displayContact() {
@@ -40,12 +43,13 @@ function displayContact() {
     menu.style.display = 'none';
     home.style.display = 'none';
     about.style.display = 'none';
+    map[0].style.display = 'block';
 }
 
 function getMenu() {
     apiRequest = new XMLHttpRequest();
     apiRequest.onload = displayMenu;
-    apiRequest.open('get', url, true);
+    apiRequest.open('get', url, 'none');
     apiRequest.send();
 
 }
@@ -53,18 +57,17 @@ function getMenu() {
 function displayMenu() {
     if (apiRequest.statusText == 'OK') {
         var response = JSON.parse(apiRequest.responseText);
-        console.log(response.menu_items);
         about.style.display = 'none';
         home.style.display = 'none';
         contact.style.display = 'none';
         menu.style.display = 'block';
+        map[0].style.display = 'none';
         // Print description of each menu item on a new line
         if (isDone == false) {
             for (var item in response.menu_items) {
                 var node = document.createElement('li');
                 var menuArray = response.menu_items[item].description;
                 var textnode = document.createTextNode(menuArray);
-                console.log(textnode);
                 node.appendChild(textnode);
                 menu.appendChild(node);
                 isDone = true;
