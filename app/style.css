@@ -21,7 +21,7 @@ button {
     height: 200px;
     width: 800px;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 .gmap_canvas {
@@ -57,7 +57,7 @@ button {
 }
 
 #info {
-    margin-top: 11%;
+    margin-top: 10%;
     margin-bottom: 11%;
 }
 
