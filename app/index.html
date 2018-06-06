@@ -6,17 +6,22 @@
         <title>Awesome Eats</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body class="container">
-        <div id="info">
-            <h1>Awsome Eats</h1>
-            <h3>348 E Main St, Lexington, KY</h3>
-            <h3>Wednesday through Saturday, dinner only: 5pm - 10pm Sunday, brunch and dinner: 11am - 8pm</h3>
-            <h1>Menu</h1>
+        <div id="info" class="flex-row">
+            <button type="button" class="col btn justify-centent-start">Awesome Eats</button>
+            <div class="col justify-content-center">
+                <button type="button" class="btn">about</button>
+                <button type="button" class="btn">menu</button>
+                <button type="button" class="btn">contact</button>
+            </div>
         </div>
-        <div id="menu"></div>
+        <div id="name">Awesome Eats</div>
+        <div id="menu" class="flex-row"></div>
+
+        <div id="foot" class="flex-row"></div>
 
         <script src="main.js"></script>
     </body>
